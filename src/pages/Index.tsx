@@ -3,6 +3,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroBurger from "@/assets/hero-burger.jpg";
+import fiveguysBurger from "@/assets/bacon-cheeseburger.jpg";
+import fries from "@/assets/fries.jpg";
+import milkshake from "@/assets/milkshake.jpg";
 
 const Index = () => {
   const features = [
@@ -60,11 +64,11 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="bg-muted/10 aspect-square rounded-lg flex items-center justify-center">
+            <div className="aspect-square rounded-lg overflow-hidden">
               <img
-                src="/placeholder.svg"
+                src={heroBurger}
                 alt="Five Guys Burger"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -108,7 +112,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-muted">
-                <img src="/placeholder.svg" alt="Five Guys Burger" className="w-full h-full object-cover" />
+                <img src={fiveguysBurger} alt="Five Guys Burger" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2">Five Guys Burger</h3>
@@ -122,7 +126,7 @@ const Index = () => {
 
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-muted">
-                <img src="/placeholder.svg" alt="Five Guys Fries" className="w-full h-full object-cover" />
+                <img src={fries} alt="Five Guys Fries" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2">Five Guys Style Fries</h3>
@@ -136,7 +140,7 @@ const Index = () => {
 
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-muted">
-                <img src="/placeholder.svg" alt="Five Guys Milkshake" className="w-full h-full object-cover" />
+                <img src={milkshake} alt="Five Guys Milkshake" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2">Milkshakes</h3>

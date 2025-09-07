@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import murrellFamily from "@/assets/murrell-family.jpg";
 
 const About = () => {
   const timeline = [
@@ -59,11 +60,11 @@ const About = () => {
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-muted aspect-square rounded-lg flex items-center justify-center">
+            <div className="aspect-square rounded-lg overflow-hidden">
               <img
-                src="/placeholder.svg"
+                src={murrellFamily}
                 alt="Murrell Family"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover"
               />
             </div>
             <div>

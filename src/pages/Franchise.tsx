@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, TrendingUp, Users, MapPin } from "lucide-react";
+import restaurantInterior from "@/assets/restaurant-interior.jpg";
 
 const Franchise = () => {
   const benefits = [
@@ -74,11 +75,11 @@ const Franchise = () => {
                 ))}
               </ul>
             </div>
-            <div className="bg-muted aspect-square rounded-lg flex items-center justify-center">
+            <div className="aspect-square rounded-lg overflow-hidden">
               <img
-                src="/placeholder.svg"
+                src={restaurantInterior}
                 alt="Five Guys Restaurant"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

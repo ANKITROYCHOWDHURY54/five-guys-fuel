@@ -1,5 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import fiveguysBurger from "@/assets/hero-burger.jpg";
+import littleHamburger from "@/assets/little-hamburger.jpg";
+import baconCheeseburger from "@/assets/bacon-cheeseburger.jpg";
+import fries from "@/assets/fries.jpg";
+import cajunFries from "@/assets/cajun-fries.jpg";
+import hotDog from "@/assets/hot-dog.jpg";
+import baconDog from "@/assets/bacon-dog.jpg";
+import milkshake from "@/assets/milkshake.jpg";
 
 const Menu = () => {
   const menuItems = [
@@ -9,7 +17,7 @@ const Menu = () => {
       description: "Two fresh, hand-formed patties hot off the grill, layered with two strips of crispy apple-wood smoked bacon and placed on a soft, toasted sesame seed bun.",
       price: "$12.99",
       category: "Burgers",
-      image: "/placeholder.svg",
+      image: fiveguysBurger,
       popular: true,
     },
     {
@@ -18,7 +26,7 @@ const Menu = () => {
       description: "One fresh, hand-formed patty hot off the grill. Add as many toppings as you want.",
       price: "$8.99",
       category: "Burgers",
-      image: "/placeholder.svg",
+      image: littleHamburger,
     },
     {
       id: 3,
@@ -26,7 +34,7 @@ const Menu = () => {
       description: "Two fresh patties grilled to perfection, layered with two strips of crispy bacon and American cheese.",
       price: "$13.99",
       category: "Burgers",
-      image: "/placeholder.svg",
+      image: baconCheeseburger,
       popular: true,
     },
     {
@@ -35,7 +43,7 @@ const Menu = () => {
       description: "Freshly cut potatoes cooked in 100% peanut oil and served boardwalk-style, extra crispy.",
       price: "$4.99",
       category: "Fries",
-      image: "/placeholder.svg",
+      image: fries,
     },
     {
       id: 5,
@@ -43,7 +51,7 @@ const Menu = () => {
       description: "Our boardwalk-style fries cooked in 100% peanut oil with a heavy sprinkling of Cajun spice.",
       price: "$5.49",
       category: "Fries",
-      image: "/placeholder.svg",
+      image: cajunFries,
     },
     {
       id: 6,
@@ -51,7 +59,7 @@ const Menu = () => {
       description: "All-beef Hebrew National hot dog, split and grilled lengthwise for a caramelized exterior.",
       price: "$6.99",
       category: "Hot Dogs",
-      image: "/placeholder.svg",
+      image: hotDog,
     },
     {
       id: 7,
@@ -59,7 +67,7 @@ const Menu = () => {
       description: "All-beef Hebrew National hot dog, split and grilled lengthwise with crispy strips of apple-wood smoked bacon.",
       price: "$8.49",
       category: "Hot Dogs",
-      image: "/placeholder.svg",
+      image: baconDog,
     },
     {
       id: 8,
@@ -67,7 +75,7 @@ const Menu = () => {
       description: "Hand-spun vanilla milkshake with or without whipped cream.",
       price: "$4.49",
       category: "Shakes",
-      image: "/placeholder.svg",
+      image: milkshake,
     },
   ];
 
